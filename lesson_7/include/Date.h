@@ -17,5 +17,8 @@ class Date
 		int GetYear() const { return m_year; }
 
 		friend std::ostream& operator<<(std::ostream& out, const std::unique_ptr<Date>& date);
+		friend bool operator<(const std::unique_ptr<Date>& date1, const std::unique_ptr<Date>& date2);
+		friend bool operator>(const std::unique_ptr<Date>& date1, const std::unique_ptr<Date>& date2);
+		friend bool operator==(const std::unique_ptr<Date>& date1, const std::unique_ptr<Date>& date2);
 };
 

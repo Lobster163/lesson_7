@@ -3,6 +3,7 @@
 int main()
 {
     punkt_1();
+    punkt_2();
 
     return 0;
 }
@@ -36,5 +37,23 @@ void punkt_1()
 
 void punkt_2()
 {
-
+    std::unique_ptr<Date> date1 = std::make_unique<Date>(1, 7, 2022);
+    std::unique_ptr<Date> date2 = std::make_unique<Date>(0, 6, 2023);
+    if (date1 < date2)
+    {
+        std::cout << "<" << std::endl;
+    }
+    if (date1 > date2)
+    {
+        std::cout << ">" << std::endl;
+    }
+    if (date1 == date2)
+    {
+        std::cout << "==" << std::endl;
+    }
+    std::cout << date1;
+    std::cout << date2;
+    std::swap(date1, date2);
+    std::cout << date1;
+    std::cout << date2;
 }
