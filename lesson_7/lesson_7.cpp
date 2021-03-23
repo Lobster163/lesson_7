@@ -5,6 +5,7 @@ int main()
     punkt_1();
     punkt_2();
 
+    //3,4,5 -> https://github.com/Lobster163/BlackJack
     return 0;
 }
 
